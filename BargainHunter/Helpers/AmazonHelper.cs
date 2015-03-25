@@ -14,7 +14,7 @@ namespace BargainHunter.Helpers
 
         public double? GetPriceByAsin(String asin)
         {
-            return GetClient().ItemLookupByAsin(asin).ListPrice;
+            return GetClient().ItemLookupByAsin(asin).OfferPrice;
         }
 
         private static AwsProductApiClient GetClient()
